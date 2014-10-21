@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>浏览器检测</title>
+	<script type="text/javascript">
+	function bro(){
+		var browser=navigator.appName
+		var b_version=navigator.appVersion
+		var version=parseFloat(b_version)
+		if ((browser=="Netscape"||browser=="Microsoft Internet Explorer") && (version>=8)) {
+			alert("Your browser is good enough!");
+			window.location.href = "index.html";
+		}else {
+			alert("It's time to upgrade your browser!");
+			window.location.href = "error.html";
+		}
+	}
+	</script>
+</head>
+<body onload="bro()">
+
+</body>
+</html>
